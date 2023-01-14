@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* styling header and navigation bar */
+.header, .start-journey{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 120px;
+}
+.header h3{
+    font-weight: 700;
+    font-size: 24px;
+}
+.nav-bar{
+    margin-top: 10px;
+}
+.nav-bar a{
+    margin-left: 34px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px; 
+    color: black;
+
+}
+/* styling main section */
+/* styling section journey */
+.journey-info{
+    width: 582px;
+    height: 270px;
+    margin-top: 80px;
+}
+.journey-info h3{
+   
+    font-weight: 700;
+    font-size: 52px;
+    margin-bottom: 16px;
+}
+.journey-info p{
+    margin-right: 60px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 26px;
+
+}
+.journey-btn{
+    padding: 10px 24px;
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+    border-radius: 41px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.journey-btn .fa-arrow-right{
+    margin-left: 8px;
+}
+.journey-camera{
+    background-image: url(../images/Circle\ design.svg);
+    padding-right: 35px;
+    width: 440px;
+    height: 414px;
+    padding-bottom: 60px;
+}
+.journey-camera img{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+/* larger screen */
+/* styling logo section */
+.logos{
+    margin: 60px 165px;
+}
+.logo{
+    margin: 35px 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+}
+/* styling for mobile */
+@media screen and (max-width:576px) {
+    .fa-magnifying-glass, .dash, .inven, hr{
+        display: none;
+    }
+    .header
+     {
+        /* position: relative; */
+        margin: 35px 16px;
+        
+     }
+     .header h3
+     {
+        position: absolute;
+        width: 300px;
+        /* left: 216px; */
+        /* align-items: center; */
+        margin-top: 10px;
+        margin-left: 240px;
+        /* margin-right: 90px; */
+     }
+    .nav-bar{
+        display: flex;
+    }
+    .nav-bar .home{
+        position:absolute;
+        /* left: -20px; */
+    }
+    .nav-bar .cart{
+        position:absolute;
+        left: 630px;
+        /* left: 450px; */
+    }
+    .start-journey{
+        width: 100%;
+        margin: 100px 80px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .start-journey .journey-camera{
+        margin-left: 45px;
+        /* justify-content: center; */
+    }
+    /* small screen */
+    .logo{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        gap: 10px;
+        
+      
+       
+        
+    }
+   
+    
+}
